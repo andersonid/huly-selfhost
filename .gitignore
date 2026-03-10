@@ -11,4 +11,5 @@ huly_v7.conf
 .livekit-api.secret
 .aibot.secret
 .env.coolify
+livekit.yaml
 .idea
