@@ -291,13 +291,12 @@ services:
 
   livekit:
     image: livekit/livekit-server:latest
-    command: --config /etc/livekit.yaml
     ports:
       - "7880:7880"
       - "7881:7881/udp"
       - "7882:7882/tcp"
-    volumes:
-      - ./livekit.yaml:/etc/livekit.yaml
+    environment:
+      - LIVEKIT_CONFIG=${LIVEKIT_CONFIG}
     restart: unless-stopped
     networks:
       - huly_net
