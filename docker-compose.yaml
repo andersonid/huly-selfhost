@@ -297,7 +297,7 @@ services:
     environment:
       - LIVEKIT_CONFIG=${LIVEKIT_CONFIG}
     labels:
-      - traefik.http.services.livekit.loadbalancer.server.port=7880
+      - traefik.http.services.https-0-m044wo88gg80scw0gwws0ocw-livekit.loadbalancer.server.port=7880
     restart: unless-stopped
     networks:
       - huly_net
