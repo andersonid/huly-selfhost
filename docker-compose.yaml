@@ -292,11 +292,12 @@ services:
   livekit:
     image: livekit/livekit-server:latest
     ports:
-      - "7880:7880"
       - "7881:7881/udp"
       - "7882:7882/tcp"
     environment:
       - LIVEKIT_CONFIG=${LIVEKIT_CONFIG}
+    labels:
+      - traefik.http.services.livekit.loadbalancer.server.port=7880
     restart: unless-stopped
     networks:
       - huly_net
