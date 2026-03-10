@@ -4,7 +4,11 @@ nginx.conf
 nginx.conf.bak
 huly.conf
 huly_v7.conf
+.env
 .huly.secret
 .cr.secret
 .rp.secret
+.livekit-api.secret
+.aibot.secret
+.env.coolify
 .idea
